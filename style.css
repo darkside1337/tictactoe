@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --bg-clr: #FF1053;
+    --scnd-clr: #8AFFC1;
+    --thrd-clr: #70D6FF;
+    --accent-clr: #F5EE9E;
+    --final-clr: #E76F51;
+}
+
+input[type="text"] {
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+}
+
+
+body {
+    background-color: var(--thrd-clr);
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 70px;
+}
+
+.displayResults {
+    border: 2px solid black;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+.markers {
+    height: 90%;
+    width: 90%;
+
+}
+
+.container {
+    margin: 70px auto;
+    border: 2px solid black;
+    width: 70%;
+    height: 500px;
+    background-color: var(--bg-clr);
+    border-radius: 25px;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.userSelection {
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+
+.board-container {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border-radius: 25px;
+    border: none;
+    background-color: var(--scnd-clr);
+    color: black;
+    padding: 5px;
+}
+
+button:disabled {
+    background-color: grey;
+    color: grey;
+}
+
+button:disabled:hover {
+    background-color: grey;
+    color: grey;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition-duration: 150ms;
+    border: 1px solid var(--scnd-clr);
+    background-color: var(--bg-clr);
+    color: white;
+}
+
+#board {
+    padding: 10px;
+    border: 1px solid black;
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--accent-clr);
+    border-radius: 25px;
+    gap: 10px;
+}
+
+#board div:hover {
+    border: 2px solid #1C5D99;
+    transform: scale(1.1);
+    transition-duration: 150ms;
+}
